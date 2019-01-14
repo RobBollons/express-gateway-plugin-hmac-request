@@ -17,7 +17,7 @@ This is done automatically for you if you used the command above.
 
 ```yaml
 policies:
-  - hmac:
+  - hmacRequest:
       - action:
           serviceEndpoint: myEndpoint
           secretKey: abcdedfg123456

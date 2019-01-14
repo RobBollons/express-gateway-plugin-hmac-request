@@ -1,7 +1,7 @@
 const crypto = require('crypto');
 
 module.exports = {
-    name: 'hmac',
+    name: 'hmacRequest',
     policy: (params, config) =>
         (req, res, next) => {
             const endpoint = config.gatewayConfig.serviceEndpoints[params.serviceEndpoint];
