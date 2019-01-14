@@ -10,21 +10,19 @@ eg plugin install express-gateway-plugin-hmac-request
 
 ## Quick start
 
-1. Make sure the plugin is listed in [system.config.yml file](https://www.express-gateway.io/docs/configuration/system.config.yml/).
+1. Make sure the plugin is listed in [system.config.yml](https://www.express-gateway.io/docs/configuration/system.config.yml/) file.
 This is done automatically for you if you used the command above.
 
-2. Add the configuration keys to [gateway.config.yml file](https://www.express-gateway.io/docs/configuration/gateway.config.yml/).
+2. Add the configuration keys to [gateway.config.yml](https://www.express-gateway.io/docs/configuration/gateway.config.yml/) file.
 
 ```yaml
 policies:
-  -
-    policies:
-      - hmac:
-          - action:
-              serviceEndpoint: myEndpoint
-              secretKey: abcdedfg123456
-              publicKey: myPublicKey
-              method: sha512
+  - hmac:
+      - action:
+          serviceEndpoint: myEndpoint
+          secretKey: abcdedfg123456
+          publicKey: myPublicKey
+          method: sha512
 ```
 
 ### Configuration Parameters

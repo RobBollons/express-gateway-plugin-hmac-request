@@ -1,12 +1,23 @@
 {
   "name": "express-gateway-plugin-hmac-policy",
   "version": "1.0.0",
-  "description": "",
+  "description": "An express gateway plugin to set HMAC headers on a proxy request",
   "main": "manifest.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/RobBollons/express-gateway-plugin-hmac-request.git"
+  },
+  "keywords": [
+      "express-gateway",
+      "HMAC"
+  ],
+  "bugs": {
+      "url": "https://github.com/RobBollons/express-gateway-plugin-hmac-request/issues"
+  },
+  "homepage": "https://github.com/RobBollons/express-gateway-plugin-hmac-request#readme",
+  "author": "Robert Bollons",
+  "license": "Apache-2.0"
 }
