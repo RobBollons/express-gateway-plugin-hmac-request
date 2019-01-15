@@ -1,6 +1,6 @@
 {
   "name": "express-gateway-plugin-hmac-request",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An express gateway plugin to set HMAC headers on a proxy request",
   "main": "manifest.js",
   "scripts": {

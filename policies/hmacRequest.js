@@ -7,7 +7,7 @@ module.exports = {
             const endpoint = config.gatewayConfig.serviceEndpoints[params.serviceEndpoint];
             const hmac = crypto
                 .createHmac(params.method, params.secretKey)
-                .update(req.rawBody || `${endpoint.url}/${req.url}`)
+                .update(req.rawBody || `${endpoint.url}${req.url}`)
                 .digest('hex');
 
             req.headers['x-hash'] = hmac;
